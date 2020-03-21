@@ -35,6 +35,270 @@ var app = new Framework7({
     // ... other parameters
   });
 
+var uno = app.actions.create({
+  buttons: [
+    {
+      text: '1'
+      
+    },
+    {
+      text: '2'
+    },
+    {
+      text: '3'
+    },
+    {
+      text: '4'
+    },
+    {
+      text: '5'
+    },
+    {
+      text: 'tachar'
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var dos = app.actions.create({
+  buttons: [
+    {
+      text: '1'
+      
+    },
+    {
+      text: '2'
+    },
+    {
+      text: '3'
+    },
+    {
+      text: '4'
+    },
+    {
+      text: '5'
+    },
+    {
+      text: 'tachar'
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var tres = app.actions.create({
+  buttons: [
+    {
+      text: '1'
+      
+    },
+    {
+      text: '2'
+    },
+    {
+      text: '3'
+    },
+    {
+      text: '4'
+    },
+    {
+      text: '5'
+    },
+    {
+      text: 'tachar'
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var cuatro = app.actions.create({
+  buttons: [
+    {
+      text: '1'
+      
+    },
+    {
+      text: '2'
+    },
+    {
+      text: '3'
+    },
+    {
+      text: '4'
+    },
+    {
+      text: '5'
+    },
+    {
+      text: 'tachar'
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var cinco = app.actions.create({
+  buttons: [
+    {
+      text: '1'
+      
+    },
+    {
+      text: '2'
+    },
+    {
+      text: '3'
+    },
+    {
+      text: '4'
+    },
+    {
+      text: '5'
+    },
+    {
+      text: 'tachar'
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var seis = app.actions.create({
+  buttons: [
+    {
+      text: '1'
+      
+    },
+    {
+      text: '2'
+    },
+    {
+      text: '3'
+    },
+    {
+      text: '4'
+    },
+    {
+      text: '5'
+    },
+    {
+      text: 'tachar'
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var escalera = app.actions.create({
+  buttons:[
+    {
+      text: 'Servido'
+     
+    },
+    {
+      text: 'No Servido'
+     
+    },
+    {
+      text: 'tachar'
+      
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var full = app.actions.create({
+  buttons:[
+    {
+      text: 'Servido'
+     
+    },
+    {
+      text: 'No Servido'
+     
+    },
+    {
+      text: 'tachar'
+      
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var poker = app.actions.create({
+  buttons:[
+    {
+      text: 'Servido'
+     
+    },
+    {
+      text: 'No Servido'
+     
+    },
+    {
+      text: 'tachar'
+      
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var generala = app.actions.create({
+  buttons:[
+    {
+      text: 'Servido'
+     
+    },
+    {
+      text: 'No Servido'
+     
+    },
+    {
+      text: 'tachar'
+      
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+var dgenerala = app.actions.create({
+  buttons:[
+    {
+      text: 'Servido'
+     
+    },
+    {
+      text: 'No Servido'
+     
+    },
+    {
+      text: 'tachar'
+      
+    },
+    {
+      text: 'Cancel',
+      color: 'red'
+    },
+  ]
+})
+
+
 var mainView = app.views.create('.view-main');
 var j1="",j2="";
 var totalf=0;
@@ -81,8 +345,31 @@ $$(document).on('page:init', '.page[data-name="anotador"]', function (e) {
     alert('El juego comienza')
     $$('#jj1').text(j1);
     $$('#jj2').text(j2);
-    ;
-    $$('#j1-2').on('click', function(){
+    
+
+    $$('#btn1j1').on('click', function () {
+    uno.open();
+});
+$$('#btn2j1').on('click', function () {
+    dos.open();
+});
+$$('#btn3j1').on('click', function () {
+    tres.open();
+});
+$$('#btn4j1').on('click', function () {
+    cuatro.open();
+});
+$$('#btn5j1').on('click', function () {
+    cinco.open();
+});
+$$('#btn6j1').on('click', function () {
+    seis.open();
+});
+
+
+
+
+   /* $$('#j1-2').on('click', function(){
         multiplicar(1,2);
     });
     function multiplicar(n,a){
@@ -95,5 +382,5 @@ $$(document).on('page:init', '.page[data-name="anotador"]', function (e) {
           //  $$('')
         //}
 
-    };
+    };*/
 })
