@@ -3,6 +3,10 @@
 var $$ = Dom7;
 
 var app = new Framework7({
+      actions: {
+    convertToPopover: false,
+    grid: true,
+  },
     // App root element
     root: '#app',
     // App Name
@@ -35,16 +39,34 @@ var app = new Framework7({
     // ... other parameters
   });
 
+
+
+
+var mainView = app.views.create('.view-main');
 var uno = app.actions.create({
   buttons: [
     {
-      text: '1'
+      text: 'uno',
+      bold: true,
+      onClick: function(){
+        app.dialog.alert('holaaaa111');
+       
+      }
       
     },
     {
-      text: '2'
+      text: 'dos',
+      bold: true,
+      onClick: function(){
+        app.dialog.alert('holaaaa111');
+        
+      }
+
     },
-    {
+    ]
+  });
+
+    /*{
       text: '3'
     },
     {
@@ -61,7 +83,7 @@ var uno = app.actions.create({
       color: 'red'
     },
   ]
-})
+
 var dos = app.actions.create({
   buttons: [
     {
@@ -88,7 +110,7 @@ var dos = app.actions.create({
       color: 'red'
     },
   ]
-})
+});
 var tres = app.actions.create({
   buttons: [
     {
@@ -115,7 +137,7 @@ var tres = app.actions.create({
       color: 'red'
     },
   ]
-})
+});
 var cuatro = app.actions.create({
   buttons: [
     {
@@ -142,7 +164,7 @@ var cuatro = app.actions.create({
       color: 'red'
     },
   ]
-})
+});
 var cinco = app.actions.create({
   buttons: [
     {
@@ -169,7 +191,7 @@ var cinco = app.actions.create({
       color: 'red'
     },
   ]
-})
+});
 var seis = app.actions.create({
   buttons: [
     {
@@ -196,7 +218,7 @@ var seis = app.actions.create({
       color: 'red'
     },
   ]
-})
+});
 var escalera = app.actions.create({
   buttons:[
     {
@@ -216,7 +238,7 @@ var escalera = app.actions.create({
       color: 'red'
     },
   ]
-})
+});
 var full = app.actions.create({
   buttons:[
     {
@@ -236,7 +258,7 @@ var full = app.actions.create({
       color: 'red'
     },
   ]
-})
+});
 var poker = app.actions.create({
   buttons:[
     {
@@ -256,7 +278,7 @@ var poker = app.actions.create({
       color: 'red'
     },
   ]
-})
+});
 var generala = app.actions.create({
   buttons:[
     {
@@ -276,7 +298,7 @@ var generala = app.actions.create({
       color: 'red'
     },
   ]
-})
+});
 var dgenerala = app.actions.create({
   buttons:[
     {
@@ -296,10 +318,8 @@ var dgenerala = app.actions.create({
       color: 'red'
     },
   ]
-})
+});*/
 
-
-var mainView = app.views.create('.view-main');
 var j1="",j2="";
 var totalf=0;
 // Handle Cordova Device Ready Event
@@ -341,30 +361,17 @@ $$(document).on('page:init', function (e) {
 // Option 2. Using live 'page:init' event handlers for each page
 $$(document).on('page:init', '.page[data-name="anotador"]', function (e) {
     // Do something here when page with data-name="about" attribute loaded and initialized
-    console.log(e);
+    
+console.log(e);
     alert('El juego comienza')
     $$('#jj1').text(j1);
     $$('#jj2').text(j2);
     
 
-    $$('#btn1j1').on('click', function () {
+    $$('#btn2j1').on('click', function () {
     uno.open();
 });
-$$('#btn2j1').on('click', function () {
-    dos.open();
-});
-$$('#btn3j1').on('click', function () {
-    tres.open();
-});
-$$('#btn4j1').on('click', function () {
-    cuatro.open();
-});
-$$('#btn5j1').on('click', function () {
-    cinco.open();
-});
-$$('#btn6j1').on('click', function () {
-    seis.open();
-});
+
 
 
 
