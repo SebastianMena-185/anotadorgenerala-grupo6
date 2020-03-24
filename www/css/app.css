@@ -1,10 +1,12 @@
 /* iOS Cordova Tweak */
 body{
-	background-color: #131A40;
+	background-color:;
 }
+
 .device-cordova.device-ios {
   height: 100vh;
 }
+
 
 :root {
   --f7-input-bg-color: transparent;
