@@ -1,157 +1,133 @@
+/* iOS Cordova Tweak */
+body{
+	background-color: #131A40;
+}
+.device-cordova.device-ios {
+  height: 100vh;
+}
 
-/* Your app custom styles here */
 :root {
-  --f7-actions-grid-button-font-size: 12px;
-  --f7-actions-grid-button-text-color: #757575;
+  --f7-input-bg-color: transparent;
+  --f7-label-font-weight: 400;
+  --f7-label-line-height: 1.3;
+  --f7-input-padding-left: 0px;
+  --f7-input-padding-right: 0px;
+  --f7-input-error-text-color: #ff3b30;
+  --f7-input-error-font-size: 12px;
+  --f7-input-error-line-height: 1.4;
+  --f7-input-error-font-weight: 400;
+  --f7-input-info-font-size: 12px;
+  --f7-input-info-line-height: 1.4;
+  --f7-input-outline-height: 40px;
+  --f7-input-outline-border-radius: 4px;
+  --f7-input-outline-padding-horizontal: 12px;
+  --f7-textarea-height: 100px;
+  /*
+  --f7-input-outline-focused-border-color: var(--f7-theme-color);
+  --f7-input-outline-invalid-border-color: var(--f7-input-error-text-color);
+  */
+  --f7-input-outline-border-color: #999;
 }
 :root .theme-dark,
 :root.theme-dark {
-  --f7-actions-label-text-color: rgba(255, 255, 255, 0.55);
+  --f7-input-outline-border-color: #444;
 }
 .ios {
-  --f7-actions-border-radius: 13px;
+  --f7-input-height: 44px;
+  --f7-input-font-size: 17px;
+  --f7-input-placeholder-color: #a9a9a9;
+  --f7-textarea-padding-vertical: 11px;
   /*
-  --f7-actions-button-text-color: var(--f7-theme-color);
+  --f7-input-focused-border-color: var(--f7-list-item-border-color);
+  --f7-input-invalid-border-color: var(--f7-list-item-border-color);
+  --f7-input-invalid-text-color: var(--f7-input-error-text-color);
   */
-  --f7-actions-button-padding: 0px;
-  --f7-actions-button-text-align: center;
-  --f7-actions-button-height: 57px;
-  --f7-actions-button-height-landscape: 44px;
-  --f7-actions-button-font-size: 20px;
-  --f7-actions-button-icon-size: 28px;
-  --f7-actions-button-justify-content: center;
-  --f7-actions-label-padding: 8px 10px;
-  --f7-actions-label-font-size: 13px;
-  --f7-actions-label-justify-content: center;
-  --f7-actions-group-border-color: transparent;
-  --f7-actions-group-margin: 8px;
-  --f7-actions-grid-button-icon-size: 48px;
-  --f7-actions-bg-color: rgba(255, 255, 255, 0.95);
-  --f7-actions-bg-color-rgb: 255, 255, 255;
-  --f7-actions-button-border-color: rgba(0, 0, 0, 0.2);
-  --f7-actions-button-pressed-bg-color: rgba(230, 230, 230, 0.9);
-  --f7-actions-button-pressed-bg-color-rgb: 230, 230, 230;
-  --f7-actions-label-text-color: #8a8a8a;
+  --f7-label-font-size: 12px;
+  --f7-label-text-color: inherit;
+  /*
+  --f7-label-focused-text-color: var(--f7-label-text-color);
+  --f7-label-invalid-text-color: var(--f7-label-text-color);
+  */
+  --f7-floating-label-scale: calc(17 / 12);
+  --f7-inline-label-font-size: 17px;
+  --f7-inline-label-line-height: 1.4;
+  --f7-inline-label-padding-top: 3px;
+  --f7-input-clear-button-size: 14px;
+  --f7-input-text-color: #000000;
+  --f7-input-info-text-color: rgba(0, 0, 0, 0.45);
+  --f7-input-clear-button-color: rgba(0, 0, 0, 0.45);
 }
 .ios .theme-dark,
 .ios.theme-dark {
-  --f7-actions-bg-color: rgba(45, 45, 45, 0.95);
-  --f7-actions-bg-color-rgb: 45, 45, 45;
-  --f7-actions-button-border-color: rgba(255, 255, 255, 0.15);
-  --f7-actions-button-pressed-bg-color: rgba(50, 50, 50, 0.9);
-  --f7-actions-button-pressed-bg-color-rgb: 50, 50, 50;
+  --f7-input-text-color: #fff;
+  --f7-input-info-text-color: rgba(255, 255, 255, 0.55);
+  --f7-input-clear-button-color: rgba(255, 255, 255, 0.5);
 }
 .md {
-  --f7-actions-border-radius: 0px;
-  --f7-actions-button-border-color: transparent;
-  --f7-actions-button-padding: 0 16px;
-  --f7-actions-button-text-align: left;
-  --f7-actions-button-height: 48px;
-  --f7-actions-button-height-landscape: 48px;
-  --f7-actions-button-font-size: 16px;
-  --f7-actions-button-icon-size: 24px;
-  --f7-actions-button-justify-content: space-between;
-  --f7-actions-label-padding: 12px 16px;
-  --f7-actions-label-font-size: 16px;
-  --f7-actions-label-justify-content: flex-start;
-  --f7-actions-group-margin: 0px;
-  --f7-actions-grid-button-icon-size: 48px;
-  --f7-actions-bg-color: #fff;
-  --f7-actions-button-text-color: rgba(0, 0, 0, 0.87);
-  --f7-actions-button-pressed-bg-color: #e5e5e5;
-  --f7-actions-label-text-color: rgba(0, 0, 0, 0.54);
-  --f7-actions-group-border-color: rgba(0, 0, 0, 0.12);
+  --f7-input-height: 36px;
+  --f7-input-font-size: 16px;
+  --f7-textarea-padding-vertical: 7px;
+  /*
+  --f7-input-focused-border-color: var(--f7-theme-color);
+  --f7-input-invalid-border-color: var(--f7-input-error-text-color);
+  --f7-input-invalid-text-color: var(--f7-input-text-color);
+  */
+  --f7-label-font-size: 12px;
+  /*
+  --f7-label-focused-text-color: var(--f7-theme-color);
+  --f7-label-invalid-text-color: var(--f7-input-error-text-color );
+  */
+  --f7-floating-label-scale: calc(16 / 12);
+  --f7-inline-label-font-size: 16px;
+  --f7-inline-label-line-height: 1.5;
+  --f7-inline-label-padding-top: 7px;
+  --f7-input-clear-button-size: 18px;
+  --f7-input-clear-button-color: #aaa;
+  --f7-input-text-color: #212121;
+  --f7-input-placeholder-color: rgba(0, 0, 0, 0.35);
+  --f7-label-text-color: rgba(0, 0, 0, 0.65);
+  --f7-input-info-text-color: rgba(0, 0, 0, 0.45);
 }
 .md .theme-dark,
 .md.theme-dark {
-  --f7-actions-bg-color: #202020;
-  --f7-actions-button-text-color: #fff;
-  --f7-actions-button-pressed-bg-color: #2e2e2e;
-  --f7-actions-group-border-color: rgba(255, 255, 255, 0.15);
+  --f7-input-text-color: rgba(255, 255, 255, 0.87);
+  --f7-input-placeholder-color: rgba(255, 255, 255, 0.35);
+  --f7-label-text-color: rgba(255, 255, 255, 0.54);
+  --f7-input-info-text-color: rgba(255, 255, 255, 0.45);
 }
 .aurora {
-  --f7-actions-border-radius: 4px;
-  --f7-actions-button-padding: 0 16px;
-  --f7-actions-button-text-align: center;
-  --f7-actions-button-height: 32px;
-  --f7-actions-button-height-landscape: 32px;
-  --f7-actions-button-font-size: 14px;
-  --f7-actions-button-icon-size: 18px;
-  --f7-actions-button-justify-content: space-between;
-  --f7-actions-label-padding: 10px 16px;
-  --f7-actions-label-font-size: 12px;
-  --f7-actions-label-justify-content: center;
-  --f7-actions-group-margin: 16px;
-  --f7-actions-grid-button-icon-size: 32px;
-  --f7-actions-bg-color: #fff;
-  --f7-actions-button-border-color: rgba(0, 0, 0, 0.12);
+  --f7-input-height: 24px;
+  --f7-input-font-size: 13px;
+  --f7-textarea-padding-vertical: 2px;
   /*
-    --f7-actions-button-text-color: var(--f7-theme-color);
-    */
-  --f7-actions-button-pressed-bg-color: #e5e5e5;
-  --f7-actions-label-text-color: rgba(0, 0, 0, 0.5);
-  --f7-actions-group-border-color: rgba(0, 0, 0, 0.1);
+  --f7-input-focused-border-color: var(--f7-list-item-border-color);
+  --f7-input-invalid-border-color: var(--f7-list-item-border-color);
+  --f7-input-invalid-text-color: var(--f7-input-error-text-color);
+  */
+  --f7-label-font-size: 11px;
+  --f7-label-text-color: inherit;
+  /*
+  --f7-label-focused-text-color: var(--f7-label-text-color);
+  --f7-label-invalid-text-color: var(--f7-label-text-color);
+  */
+  --f7-floating-label-scale: calc(13 / 11);
+  --f7-inline-label-font-size: 14px;
+  --f7-inline-label-line-height: 1.4;
+  --f7-inline-label-padding-top: 1px;
+  --f7-input-clear-button-size: 14px;
+  --f7-input-outline-height: 32px;
+  --f7-input-outline-padding-horizontal: 8px;
+  --f7-input-text-color: #000000;
+  --f7-input-placeholder-color: rgba(0, 0, 0, 0.32);
+  --f7-input-clear-button-color: #666;
+  --f7-input-info-text-color: rgba(0, 0, 0, 0.5);
 }
 .aurora .theme-dark,
 .aurora.theme-dark {
-  --f7-actions-bg-color: #202020;
-  --f7-actions-button-text-color: #fff;
-  --f7-actions-button-border-color: rgba(255, 255, 255, 0.15);
-  --f7-actions-button-pressed-bg-color: #2e2e2e;
-  --f7-actions-group-border-color: rgba(255, 255, 255, 0.15);
+  --f7-input-text-color: #fff;
+  --f7-input-clear-button-color: #aaa;
+  --f7-input-placeholder-color: rgba(255, 255, 255, 0.35);
+  --f7-input-info-text-color: rgba(255, 255, 255, 0.45);
 }
 
-
-.view{
-	text-align:center;
-	margin-left:8px;
-	
-}
-.txt{
-	margin-bottom: 8vh;
-	margin-left:-2.5vh ;
-}
-#iniciar{
-	margin-left: 8px;
-    padding: 11px 35px;
-    border: solid black 0.5px;
-}
-.pantalla1{
-	margin-left: 9vh;
-    margin-bottom: 7vh;
-}
-#ayudar{
-	margin-left: -2vw;
-	padding: 11px 15px;
-    border: solid black 0.5px;
-
-}
-#j1{
-	border: black solid 0.5px;
-	padding: 10px 10px;
-}
-#j2{
-	border: black solid 0.5px;
-	padding: 10px 10px;
-	margin-top: 6vh;
-}
-#iniciar{
-
-}
-.list .item-input{
-	margin-bottom:10px;
-	margin-top: 3px;
-}
-
-.contenedor{
-	width: 100%;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-}
-.caja{
-	display:block;
-
-
-
-}
+/* Your app custom styles here */
