@@ -1,96 +1,128 @@
 <!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
 <div class="page" data-name="about">
     <div class="navbar">
-        <div class="navbar-inner sliding">
+        <div class="navbar-inner sliding" style="background-color: #333538">
         <div class="left">
-            <a href="#" class="link back">
+            <a href="#" class="link back" style="color: #35EDA5">
             <i class="icon icon-back"></i>
-            <span id="volver" class="ios-only">Back</span>
+            <span id="volver" class="ios-only"></span>
             </a>
         </div>
-        <div class="title">Anotador</div>
+        <div class="title-text-large" align="center" style="color: white"><h4>Anotador de Generala</h4></div>
         </div>
     </div>
-    <div style="text-align: center;"  class="page-content ">
-   <div class="list">
-  
-        <div class="item-inner item-cell caja">
-          <div class="item-row">
-            <div class="item-cell">JUEGO</div>
-            <div class="item-cell"><h2 id="jj1"></h2></div>
-            <div class="item-cell"><h2 id="jj2"></h2></div>
+    <div style="text-align: center;" class="page-content">
+  <div class="list">
+    <div class="item-inner item-cell">
+          <div class="item-row menu-item">
+            <div class="item-cell icon titlem" style="color: #35EDA5">JUEGO</div>
+            <div class="item-cell raya1"><div id="jj1"></div></div>
+            <div class="item-cell raya2"><div id="jj2"></div></div>
           </div>
-          <div class="item-row">
-            <div class="item-cell">UNO</div>
-           <div class="item-cell"><a id="btn1j1" class="ac-1 col button button-raised button-fill" href="#" style="width: 50%" value="">-</a></div>
-           <div class="item-cell"><a id="btn1j2" class="ac-1 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
+          <div class="item-row menu-item">
+          <div class="item-cell icon titlem">UNO</div>
+          <div class="item-cell rayaj1">
+          <a id="btn1j1" class="ac-1 col button button-raised button-fill rayaj1" href="#" style="width: 35%; text-align: center" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn1j2" class="ac-1 col button button-raised button-fill rayaj2" href="#" style="width: 35%; align-items: center" value="">-</a></div>
           </div>
-          <div class="item-row">
-            <div class="item-cell">DOS</div>
-           <div class="item-cell"><a id="btn2j1" class="ac-2 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn2j2" class="ac-2 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-              <div class="item-row">
-            <div class="item-cell">TRES</div>
-           <div class="item-cell"><a id="btn3j1" class="ac-3 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn3j2" class="ac-3 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            <div class="item-row">
-            <div class="item-cell">CUATRO</div>
-           <div class="item-cell"><a id="btn4j1" class="ac-4 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn4j2" class="ac-4 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            <div class="item-row">
-            <div class="item-cell">CINCO</div>
-           <div class="item-cell"><a id="btn5j1" class="ac-5 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn5j2" class="ac-5 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            <div class="item-row">
-            <div class="item-cell">SEIS</div>
-           <div class="item-cell"><a id="btn6j1" class="ac-6 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn6j2" class="ac-6 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            <div class="item-row">
-            <div class="item-cell">ESCALERA</div>
-           <div class="item-cell"><a id="btn7j1" class="ac-7 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn7j2" class="ac-7 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            <div class="item-row">
-            <div class="item-cell">FULL</div>
-           <div class="item-cell"><a id="btn8j1" class="ac-8 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn8j2" class="ac-8 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            <div class="item-row">
-            <div class="item-cell">POKER</div>
-           <div class="item-cell"><a id="btn9j1" class="ac-9 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn9j2" class="ac-9 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            <div class="item-row">
-            <div class="item-cell">GENERALA</div>
-           <div class="item-cell"><a id="btn10j1" class="ac-10 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn10j2" class="ac-10 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            <div class="item-row">
-            <div class="item-cell">D.GENERALA</div>
-           <div class="item-cell"><a id="btn11j1" class="ac-11 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn11j2" class="ac-11 col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            <div class="item-row">
-            <div class="item-cell">TOTAL</div>
-           <div class="item-cell"><a id="btn12j1" class="col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-           <div class="item-cell"><a id="btn12j2" class="col button button-raised button-fill" href="#" style="width: 50%" value="" >-</a></div>
-          </div>
-            </div>
-          </div>
-        </div>
-       
-    <div class="toolbar toolbar-bottom">
-                    <div class="toolbar-inner">
-                    <!-- Toolbar links -->
 
-                    
-                   <input type="button" id="terminar" class="col button button-raised button-fill" style=" margin-left:2vh;width:40%;border-radius:50px" value="terminar" name=""/>
-                   <input type="button" id="limpiar" class="col button button-raised button-fill"style=" width:40%;border-radius:50px;margin-right:2vh"  value="limpiar" name=""/>
+          <div class="item-row menu-item">
+          <div class="item-cell icon titlem">DOS</div>
+          <div class="item-cell rayaj1">
+          <a id="btn1j1" class="ac-2 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn1j2" class="ac-2 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row menu-item">
+          <div class="item-cell icon titlem">TRES</div>
+          <div class="item-cell rayaj1">
+          <a id="btn1j1" class="ac-3 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn1j2" class="ac-3 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row menu-item">
+          <div class="item-cell icon titlem">CUATRO</div>
+          <div class="item-cell rayaj1">
+          <a id="btn1j1" class="ac-4 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn1j2" class="ac-4 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row menu-item">
+          <div class="item-cell icon titlem">CINCO</div>
+          <div class="item-cell rayaj1">
+          <a id="btn1j1" class="ac-5 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn1j2" class="ac-5 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row menu-item">
+          <div class="item-cell icon titlem">SEIS</div>
+          <div class="item-cell rayaj1">
+          <a id="btn1j1" class="ac-6 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn1j2" class="ac-6 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row  menu-item">
+          <div class="item-cell icon titlem">ESCALERA</div>
+          <div class="item-cell rayaj1">
+          <a id="btn7j1" class="ac-7 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn7j2" class="ac-7 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row  menu-item">
+          <div class="item-cell icon titlem">FULL</div>
+          <div class="item-cell rayaj1">
+          <a id="btn8j1" class="ac-8 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+           <div class="item-cell rayaj2">
+          <a id="btn8j2" class="ac-8 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row  menu-item">
+          <div class="item-cell icon titlem">POKER</div>
+          <div class="item-cell rayaj1">
+          <a id="btn9j1" class="ac-9 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn9j2" class="ac-9 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row  menu-item">
+          <div class="item-cell icon titlem">GENERALA</div>
+          <div class="item-cell rayaj1">
+            <a id="btn10j1" class="ac-10 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+           <div class="item-cell rayaj2">
+            <a id="btn10j2" class="ac-10 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row  menu-item">
+          <div class="item-cell icon titlem">D.ESCALERA</div>
+          <div class="item-cell rayaj1">
+          <a id="btn11j1" class="ac-11 col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn11j2" class="ac-11 col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+
+          <div class="item-row  menu-item">
+          <div class="item-cell icon titlem">TOTAL</div>
+          <div class="item-cell rayaj1">
+          <a id="btn12j1" class="col button button-raised button-fill rayaj1" href="#" style="width: 35%" value="">-</a></div>
+          <div class="item-cell rayaj2">
+          <a id="btn12j2" class="col button button-raised button-fill rayaj2" href="#" style="width: 35%" value="">-</a></div>
+          </div>
+          </div>
+    </div>
+  </div>
+       
+  <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner" style="background-color: #333538">
+                                      
+                   <input type="button" id="terminar" class="col button button-raised button-fill" style=" margin-left:2vh;width:40%; border-radius:50px; color: white; background-color: #35EDA5 " value="terminar" name=""/>
+                   <input type="button" id="limpiar" class="col button button-raised button-fill" style=" width:40%;border-radius:50px; margin-right:2vh; color: white; background-color: #9042FF " value="limpiar" name=""/>
                     </div>
                 </div>
 </div>

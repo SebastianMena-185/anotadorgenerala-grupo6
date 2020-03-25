@@ -4,7 +4,7 @@ var app = new Framework7({
   root: '#app', // App root element
 
   id: 'io.framework7.myapp', // App bundle ID
-  name: 'My App', // App name
+  name: 'Anotador Generala', // App name
   theme: 'auto', // Automatic theme detection
   // App root data
   // App root methods
